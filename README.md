@@ -30,19 +30,3 @@ To roll back, revert the commit and push.
 
 GitHub Pages cannot set response headers, so the Content-Security-Policy and the referrer policy
 are `<meta>` tags in each page. Keep them in sync between the two pages.
-
-## Domain
-
-DNS is managed on register.it. The custom domain `lordkada.it` is set in the repository's Pages
-settings, verified on the GitHub account, with HTTPS enforced (certificate issued by GitHub).
-
-```text
-lordkada.it                              A      185.199.108.153
-                                         A      185.199.109.153
-                                         A      185.199.110.153
-                                         A      185.199.111.153
-www.lordkada.it                          CNAME  lordkada.github.io.
-_github-pages-challenge-lordkada         TXT    (domain verification)
-```
-
-`guac.lordkada.it` keeps its own A record pointing to MightyAtom: it is not part of this site.
