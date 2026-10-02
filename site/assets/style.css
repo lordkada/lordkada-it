@@ -184,3 +184,5 @@ h2 .num { color: var(--accent); font-size: 14px; vertical-align: middle; margin-
 }
 .prose a { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .prose a:hover { color: var(--accent); }
+.org a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.org a:hover { color: var(--accent); }
