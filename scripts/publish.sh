@@ -45,26 +45,46 @@ switch_to() {
   mv -Tf "$LIVE.tmp" "$LIVE"
 }
 
+# Every page in site/, as a path relative to site/ (index.html, en/index.html, ...).
+pages() { (cd "$1" && find . -name '*.html' -printf '%P\n' | sort); }
+
+# The URL path a page is served at: en/index.html -> /en/
+url_path() { local p="/$1"; echo "${p%index.html}"; }
+
 verify() {
-  local expected actual
-  expected="$(sha256sum "$LIVE/index.html" | cut -d' ' -f1)"
-  for attempt in 1 2 3; do
-    actual="$(curl -fsS --max-time 10 --resolve "$DOMAIN:443:127.0.0.1" "https://$DOMAIN/" | sha256sum | cut -d' ' -f1)" || actual=""
-    [ "$actual" = "$expected" ] && { say "verified: https://$DOMAIN/ serves release $(live_release)"; return 0; }
-    sleep 1
-  done
-  die "https://$DOMAIN/ does not serve the live index.html (is Caddy up and mounting $WEB_ROOT?)"
+  local page path expected actual ok
+  while read -r page; do
+    path="$(url_path "$page")"
+    expected="$(sha256sum "$LIVE/$page" | cut -d' ' -f1)"
+    ok=0
+    for attempt in 1 2 3; do
+      actual="$(curl -fsS --max-time 10 --resolve "$DOMAIN:443:127.0.0.1" "https://$DOMAIN$path" | sha256sum | cut -d' ' -f1)" || actual=""
+      [ "$actual" = "$expected" ] && { ok=1; break; }
+      sleep 1
+    done
+    [ "$ok" = 1 ] || die "https://$DOMAIN$path does not serve the live $page (is Caddy up and mounting $WEB_ROOT?)"
+  done < <(pages "$LIVE/")
+  say "verified: https://$DOMAIN/ serves release $(live_release) ($(pages "$LIVE/" | wc -l) pages)"
 }
 
 check_site() {
   [ -f "$SRC/index.html" ] || die "missing $SRC/index.html"
-  # Every local href/src in the page must exist in site/.
-  local missing=0 ref
-  while read -r ref; do
-    [ -e "$SRC/$ref" ] || { echo "  missing: $ref" >&2; missing=1; }
-  done < <(grep -oE '(href|src|srcset)="[^"#:]+"' "$SRC/index.html" | sed -E 's/^[a-z]+="//; s/"$//' | sort -u)
-  [ "$missing" = 0 ] || die "index.html references files that are not in site/"
-  say "site/ checks passed"
+  # Every local href/src in every page must exist in site/: absolute refs from
+  # site/, relative ones from the page's directory, a trailing / means index.html.
+  local missing=0 page dir ref target
+  while read -r page; do
+    dir="$(dirname "$page")"
+    while read -r ref; do
+      case "$ref" in
+        /*) target="$SRC$ref" ;;
+        *) target="$SRC/$dir/$ref" ;;
+      esac
+      case "$target" in */) target="${target}index.html" ;; esac
+      [ -e "$target" ] || { echo "  missing in $page: $ref" >&2; missing=1; }
+    done < <(grep -oE '(href|src|srcset)="[^"#:]+"' "$SRC/$page" | sed -E 's/^[a-z]+="//; s/"$//' | sort -u)
+  done < <(pages "$SRC")
+  [ "$missing" = 0 ] || die "pages reference files that are not in site/"
+  say "site/ checks passed ($(pages "$SRC" | wc -l) pages)"
 }
 
 case "$mode" in

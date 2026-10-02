@@ -65,7 +65,11 @@ a { color: inherit; }
   width: 34px; height: 34px; border-radius: 8px; display: grid; place-items: center; cursor: pointer;
 }
 .theme-toggle:hover { color: var(--text); }
-@media (max-width: 640px) { .nav nav { display: none; } .theme-toggle { margin-left: auto; } }
+.lang { display: flex; align-items: center; gap: 6px; font: 500 13px var(--mono); color: var(--muted); margin-right: -12px; }
+.lang a { text-decoration: none; color: var(--muted); padding: 4px 2px; transition: color .15s; }
+.lang a:hover { color: var(--text); }
+.lang a[aria-current="page"] { color: var(--text); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+@media (max-width: 640px) { .nav nav { display: none; } .lang { margin-left: auto; } }
 
 /* hero */
 .hero { position: relative; padding: 120px 0 96px; overflow: hidden; }
