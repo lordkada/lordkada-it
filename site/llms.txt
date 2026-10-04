@@ -13,14 +13,15 @@ The site is a single page in two languages. The Italian version is the default; 
 
 ## Highlights
 
-- PagoPA (2021–now): laid the groundwork for and launched the Developer Portal, the first developer portal of the Italian Public Administration, used by thousands of public bodies and technology partners; released DOS68K, an open-source RAG platform spun off from the portal's AI assistant.
+- PagoPA (2021–now): leads three main initiatives plus early-stage ones, 15–20 people in cross-functional teams (tech, design, legal, account); laid the groundwork for and launched the Developer Portal, the first developer portal of the Italian Public Administration, used by thousands of public bodies and technology partners; released DOS68K, an open-source RAG platform spun off from the portal's AI assistant.
 - HELLO Mobility (2020–2021): product manager for the build and production launch of the HELLO app (parking, EV charging, micromobility).
 - International STEM Awards (2019–2020): co-founder of a platform for STEM projects by young people aged 7–25; the first edition gathered 118 projects from about 300 participants in 10 countries.
-- Thingle.me (2015–2019, CEO): customer support software for physical products via QR code or NFC; launched Thingly, a conversational AI assistant for appliances, in 2018.
+- Thingle.me (2015–2019, CEO, team of about 8): customer support software for physical products via QR code or NFC; launched Thingly, a conversational AI assistant for appliances, in 2018.
 - Styloola (2014, CTO): led the development of the Styloola Box, an in-store Wi-Fi analytics device for fashion retail.
-- Opinionage (2011–2015, CEO, San Francisco): the social network of opinions, later the HUBNGO community platform for SMEs.
-- Couponline (2004–2009, co-founder and CTO): ScontoQui, personalised coupons delivered at the store entrance.
-- Concept (2000–2011, CEO): myK, an Enterprise Feedback Management platform listed by Gartner in 2010 among the leading solutions.
+- Opinionage (2011–2015, CEO, San Francisco, team of about 8): the social network of opinions, later the HUBNGO community platform for SMEs.
+- Couponline (2004–2009, co-founder and CTO, team of about 8): ScontoQui, personalised coupons delivered at the store entrance.
+- Concept (2000–2011, CEO, up to 12–15 people): myK, an Enterprise Feedback Management platform listed by Gartner in 2010 among the leading solutions.
+- Information Delivery Systems (1997–2000, CEO): Business Intelligence consulting boutique founded while at university, grew to 25–30 people.
 
 ## Elsewhere
 
