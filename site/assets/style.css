@@ -130,6 +130,11 @@ h2 .num { color: var(--accent); font-size: 14px; vertical-align: middle; margin-
 .when { color: var(--muted); font-size: 13px; padding-top: 3px; }
 .timeline h3 { margin: 0; font-size: 17px; font-weight: 600; }
 .org { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.impact { margin: 10px 0 0; padding-left: 18px; font-size: 15px; }
+.timeline .impact li { display: list-item; padding: 0; margin: 0 0 4px; }
+.timeline .impact li::before { content: none; }
+.impact a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.impact a:hover { color: var(--accent); }
 @media (max-width: 600px) { .timeline li { grid-template-columns: 1fr; gap: 2px; padding-left: 20px; } }
 
 /* cards */
