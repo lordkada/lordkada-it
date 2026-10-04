@@ -1,0 +1,29 @@
+# Carlo Alberto Degli Atti (lordkada)
+
+> Product & Innovation Leader based in Milan, Italy, with over 25 years in tech. Product Lead at PagoPA S.p.A., the state-controlled company behind Italy's public digital payments and services platforms. Serial founder of six companies across Italy and the United States, and a computer scientist who still builds hands-on: AI agents, local-first computer vision, and research on artificial valence.
+
+The site is a single page in two languages. The Italian version is the default; the English one is a translation with the same content.
+
+## Profile
+
+- [Profile, English](https://lordkada.it/en/): about, how I work, experience, side projects, writing, education
+- [Profilo, italiano](https://lordkada.it/): the same page in Italian
+- [Résumé (PDF, English)](https://lordkada.it/assets/carlo-alberto-degli-atti-cv-en.pdf)
+- [Curriculum vitae (PDF, italiano)](https://lordkada.it/assets/carlo-alberto-degli-atti-cv.pdf)
+
+## Highlights
+
+- PagoPA (2021–now): laid the groundwork for and launched the Developer Portal, the first developer portal of the Italian Public Administration, used by thousands of public bodies and technology partners; released DOS68K, an open-source RAG platform spun off from the portal's AI assistant.
+- HELLO Mobility (2020–2021): product manager for the build and production launch of the HELLO app (parking, EV charging, micromobility).
+- International STEM Awards (2019–2020): co-founder of a platform for STEM projects by young people aged 7–25; the first edition gathered 118 projects from about 300 participants in 10 countries.
+- Thingle.me (2015–2019, CEO): customer support software for physical products via QR code or NFC; launched Thingly, a conversational AI assistant for appliances, in 2018.
+- Styloola (2014, CTO): led the development of the Styloola Box, an in-store Wi-Fi analytics device for fashion retail.
+- Opinionage (2011–2015, CEO, San Francisco): the social network of opinions, later the HUBNGO community platform for SMEs.
+- Couponline (2004–2009, co-founder and CTO): ScontoQui, personalised coupons delivered at the store entrance.
+- Concept (2000–2011, CEO): myK, an Enterprise Feedback Management platform listed by Gartner in 2010 among the leading solutions.
+
+## Elsewhere
+
+- [LinkedIn](https://www.linkedin.com/in/lordkada/)
+- [GitHub](https://github.com/lordkada)
+- [Medium](https://lordkada.medium.com/): essays on AI, cognitive science and side projects
