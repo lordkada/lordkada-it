@@ -23,13 +23,14 @@ header { display: flex; gap: 14pt; align-items: center; padding-bottom: 10pt; bo
 header img { width: 64pt; height: 64pt; border-radius: 50%; object-fit: cover; }
 header .who { flex: 1; }
 h1 { margin: 0; font-size: 21pt; line-height: 1.1; letter-spacing: -0.01em; }
+.role .nowrap { white-space: nowrap; }
 .role { margin: 2pt 0 0; color: var(--accent); font-weight: 600; font-size: 10.5pt; }
 .tagline { margin: 2pt 0 0; color: var(--muted); font-style: italic; }
 .contacts { margin: 0; padding: 0; list-style: none; text-align: right; font-size: 8.4pt; color: var(--muted); }
 .contacts li { margin: 0 0 1.5pt; }
 
 h2 {
-  margin: 13pt 0 6pt; font-size: 8.6pt; text-transform: uppercase; letter-spacing: .12em;
+  margin: 13pt 0 6pt; font-size: 8.6pt; text-transform: uppercase; letter-spacing: .12em; font-kerning: none;
   color: var(--accent-2); border-bottom: .6pt solid var(--line); padding-bottom: 2pt;
 }
 p { margin: 0 0 5pt; }
@@ -39,14 +40,17 @@ p { margin: 0 0 5pt; }
 .principles strong { display: block; }
 .principles span { color: var(--muted); }
 
-.job { break-inside: avoid; margin: 0 0 7pt; }
+/* A role may split across pages, but never leaves its title alone at the bottom. */
+.job { margin: 0 0 7pt; }
+.job-head { break-after: avoid; }
+.job li { break-inside: avoid; }
 .job-head { display: flex; justify-content: space-between; gap: 10pt; }
 .job h3 { margin: 0; font-size: 10pt; }
 .job .org { color: var(--muted); font-weight: 400; }
 .job .when { color: var(--muted); font-size: 8.4pt; white-space: nowrap; }
 .job ul { margin: 2pt 0 0; padding-left: 12pt; }
 .job li { margin: 0 0 1.5pt; }
-.job li.outcome { list-style: none; margin-left: -12pt; color: var(--muted); font-style: italic; }
+.job li.outcome { break-before: avoid; list-style: none; margin-left: -12pt; color: var(--muted); font-style: italic; }
 .job a, .edu a { border-bottom: .5pt solid var(--accent); }
 
 .edu { margin: 0; padding: 0; list-style: none; }
