@@ -46,6 +46,7 @@ p { margin: 0 0 5pt; }
 .job .when { color: var(--muted); font-size: 8.4pt; white-space: nowrap; }
 .job ul { margin: 2pt 0 0; padding-left: 12pt; }
 .job li { margin: 0 0 1.5pt; }
+.job li.outcome { list-style: none; margin-left: -12pt; color: var(--muted); font-style: italic; }
 .job a, .edu a { border-bottom: .5pt solid var(--accent); }
 
 .edu { margin: 0; padding: 0; list-style: none; }

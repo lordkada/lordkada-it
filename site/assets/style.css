@@ -135,6 +135,9 @@ h2 .num { color: var(--accent); font-size: 14px; vertical-align: middle; margin-
 .timeline .impact li::before { content: none; }
 .impact a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .impact a:hover { color: var(--accent); }
+.timeline .impact li.outcome { list-style: none; margin: 8px 0 0 -18px; color: var(--muted); font-size: 14px; }
+.timeline h3 .since { color: var(--muted); font-weight: 400; font-size: 14px; }
+.plain a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 @media (max-width: 600px) { .timeline li { grid-template-columns: 1fr; gap: 2px; padding-left: 20px; } }
 
 /* cards */
