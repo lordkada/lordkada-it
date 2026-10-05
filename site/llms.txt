@@ -19,7 +19,7 @@ The site is a single page in two languages. The Italian version is the default; 
 - Thingle.me (2015–2019, CEO): customer support software for physical products via QR code or NFC; launched Thingly, a conversational AI assistant for appliances, in 2018. Raised funding, then wound down in a highly competitive market.
 - Styloola (2014, CTO): led the development of the Styloola Box, an in-store Wi-Fi analytics device for fashion retail.
 - Opinionage (2011–2015, CEO, San Francisco): the social network of opinions, later the HUBNGO community platform for SMEs. Raised funding, then wound down in a highly competitive market.
-- Couponline (2004–2009, co-founder and CTO): ScontoQui, personalised coupons delivered at the store entrance. Wound down after much larger competitors crushed it, before its patents could be enforced.
+- Couponline (2004–2009, co-founder and CTO): ScontoQui, personalised coupons delivered at the store entrance. Outcompeted by much larger players, it ran out of cash before its patents could be enforced, and was wound down.
 - Concept (2000–2011, CEO, up to 12–15 people): myK, an Enterprise Feedback Management platform listed by Gartner in 2010 among the leading solutions. Exit: sold his shares to his partners.
 - Information Delivery Systems (1997–2000, CEO): Business Intelligence consulting boutique founded while at university, grew to 25–30 people. Exit: acquired by a larger company.
 
