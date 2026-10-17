@@ -1,6 +1,6 @@
 # Carlo Alberto Degli Atti (lordkada)
 
-> Innovation, AI & Product Leader based in Milan, Italy, who takes AI and new ideas from prototype to production, including inside large, regulated organisations. Product Lead at PagoPA S.p.A., the state-controlled company behind Italy's public digital payments and services platforms. Serial founder of six companies across Italy and the United States, with two exits, and a computer scientist who still builds hands-on: AI agents, local-first computer vision, and research on artificial valence. Open to Head of Innovation or Chief AI Officer roles, and to product leadership on new products; reachable via LinkedIn.
+> Innovation, AI & Product Leader based in Milan, Italy, who takes AI and new ideas from prototype to production, including inside large, regulated organisations. Product Lead at PagoPA S.p.A., the state-controlled company behind Italy's public digital payments and services platforms. Serial founder of six companies across Italy and the United States, with two exits, and a computer scientist who still builds hands-on: AI agents (including a personal assistant that acts only on his approval), local-first computer vision, and research on artificial valence. Open to Head of Innovation or Chief AI Officer roles, and to product leadership on new products; reachable via LinkedIn.
 
 The site is a single page in two languages. The Italian version is the default; the English one is a translation with the same content.
 
