@@ -54,7 +54,7 @@ p { margin: 0 0 5pt; }
 .job a, .edu a { border-bottom: .5pt solid var(--accent); }
 
 .edu { margin: 0; padding: 0; list-style: none; }
-.edu li { margin: 0 0 4pt; break-inside: avoid; }
+.edu li { margin: 0 0 3pt; break-inside: avoid; }
 .edu em { color: var(--muted); }
 
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14pt; }
